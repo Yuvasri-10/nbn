@@ -1,10 +1,3 @@
-//import React from 'react';//
-//import Tracker from './components/tracker';//
-//import Planner from './components/services';//
-//import About from './components/about';//
-//import Contact from './components/contact';//
-//import ProgressTracker from './components/ProgressTracker';//
-
 import '../styles/global.css'; 
 
 function App() {
@@ -52,4 +45,6 @@ function App() {
   );
 }
 
-//export default App;//
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
